@@ -10,12 +10,17 @@ import java.util.Date;
 /**
  * @author lingwang
  * @date 2021/3/15 20:14
+ * 日期处理
  */
 public class DateUtil {
 
     private static Logger logger = LoggerFactory.getLogger(DateUtil.class);
 
 
+    /**
+     * 获取当前时间的前30天
+     * @return
+     */
     public final static String getDayMonthEnd(){
         try {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
