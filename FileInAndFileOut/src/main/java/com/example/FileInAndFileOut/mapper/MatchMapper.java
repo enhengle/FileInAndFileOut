@@ -14,8 +14,9 @@ import java.util.List;
  * @date 2021/3/16 10:50
  */
 @Repository
-public interface MatchMapper extends BaseMapper<MatchTable> {
+public interface MatchMapper{
 
-    @Select("select * from match_table where is_deleted=#{isDeleted}")
-    IPage<MatchTable> findList(@Param("page")IPage<MatchTable> page,@Param("isDeleted")int isDeleted);
+//    @Select("select * from match_table where is_deleted=#{isDeleted}")
+    List<MatchTable> findList(@Param("isDeleted")int isDeleted);
+
 }

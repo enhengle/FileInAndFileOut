@@ -10,5 +10,5 @@ import java.util.List;
  * @date 2021/3/16 10:52
  */
 public interface MatchService {
-    IPage<MatchTable> findList();
+    List<MatchTable> findList();
 }

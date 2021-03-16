@@ -21,9 +21,7 @@ public class MatchServiceImpl implements MatchService {
     private MatchMapper mapper;
 
     @Override
-    public IPage<MatchTable> findList() {
-        Page<MatchTable> page = new Page<>(1,1);
-//        return mapper.findList(page,1);
-        return mapper.findList(page,1);
+    public List<MatchTable> findList() {
+        return mapper.findList(1);
     }
 }
