@@ -1,6 +1,6 @@
 package com.example.FileInAndFileOut.dao.controller;
 
-import com.example.FileInAndFileOut.dao.pojo.MatchTable;
+import com.example.FileInAndFileOut.dao.pojo.manager.MatchTable;
 import com.example.FileInAndFileOut.dao.service.MatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,11 +1,8 @@
-package com.example.FileInAndFileOut.dao.pojo;
+package com.example.FileInAndFileOut.dao.pojo.manager;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -13,21 +10,33 @@ import java.sql.Timestamp;
  * @date 2021/3/16 17:30
  */
 @Entity
+@Table(name = "match_table",schema = "my_manager_wl")
 public class MatchTable {
     @Id
+    @Column(name = "match_id")
     @GeneratedValue
     private int matchId;
+    @Column(name = "match_parent_id")
     private int matchParentId;
+    @Column(name = "match_name")
     private String matchName;
+    @Column(name = "match_content")
     private String matchContent;
+    @Column(name = "match_type")
     private int matchType;
+    @Column(name = "match_user_id")
     private int matchUserId;
+    @Column(name = "match_user_name")
     private String matchUserName;
+    @Column(name = "is_deleted")
     private int isDeleted=1;
+    @Column(name = "remarks")
     private String remarks;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "UTF-8")
+    @Column(name = "created_time")
     private Timestamp createdTime;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "UTF-8")
+    @Column(name = "updated_time")
     private Timestamp updatedTime;
 
     public MatchTable() {

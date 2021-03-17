@@ -1,6 +1,6 @@
-package com.example.FileInAndFileOut.dao.respository;
+package com.example.FileInAndFileOut.dao.respository.manager;
 
-import com.example.FileInAndFileOut.dao.pojo.MatchTable;
+import com.example.FileInAndFileOut.dao.pojo.manager.MatchTable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
