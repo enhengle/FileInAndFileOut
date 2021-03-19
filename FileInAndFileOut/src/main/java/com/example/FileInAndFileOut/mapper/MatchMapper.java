@@ -16,7 +16,7 @@ import java.util.List;
 @Repository
 public interface MatchMapper{
 
-//    @Select("select * from match_table where is_deleted=#{isDeleted}")
+    @Select("select * from match_table where is_deleted=#{isDeleted}")
     List<MatchTable> findList(@Param("isDeleted")int isDeleted);
 
 }
