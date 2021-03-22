@@ -1,8 +1,6 @@
-package com.example.FileInAndFileOut.mapper;
+package com.example.FileInAndFileOut.mapper.managerWl;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.example.FileInAndFileOut.pojo.MatchTable;
+import com.example.FileInAndFileOut.pojo.managerWl.MatchTable;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;

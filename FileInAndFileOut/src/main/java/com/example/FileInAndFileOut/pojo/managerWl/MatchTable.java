@@ -1,4 +1,4 @@
-package com.example.FileInAndFileOut.pojo;
+package com.example.FileInAndFileOut.pojo.managerWl;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonFormat;

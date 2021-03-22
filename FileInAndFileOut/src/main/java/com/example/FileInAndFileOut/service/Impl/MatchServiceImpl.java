@@ -1,9 +1,7 @@
 package com.example.FileInAndFileOut.service.Impl;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.FileInAndFileOut.mapper.MatchMapper;
-import com.example.FileInAndFileOut.pojo.MatchTable;
+import com.example.FileInAndFileOut.mapper.managerWl.MatchMapper;
+import com.example.FileInAndFileOut.pojo.managerWl.MatchTable;
 import com.example.FileInAndFileOut.service.MatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

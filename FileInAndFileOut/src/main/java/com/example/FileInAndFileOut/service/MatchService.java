@@ -1,7 +1,6 @@
 package com.example.FileInAndFileOut.service;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.example.FileInAndFileOut.pojo.MatchTable;
+import com.example.FileInAndFileOut.pojo.managerWl.MatchTable;
 
 import java.util.List;
 
